@@ -43,7 +43,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-BLUE-200 flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-8">Weather App</h1>
       <SearchBar onSearch={handleSearch} />
       {loading && <p className="text-blue-500 mt-4">Loading...</p>}
