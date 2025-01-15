@@ -43,13 +43,13 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-BLUE-200 flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold mb-8">Weather App</h1>
+    <div className="min-h-screen bg-purple-700 flex flex-col items-center justify-center">
+      <h1 className="text-4xl text-purple-100 font-bold mb-8  ">KNOWEATHER</h1>
       <SearchBar onSearch={handleSearch} />
-      {loading && <p className="text-blue-500 mt-4">Loading...</p>}
+      {loading && <p className="text-purple-500 mt-4">Loading...</p>}
       {error && <p className="text-red-500 mt-4">{error}</p>}
       {weather && (
-        <div className="mt-8 p-6 bg-white rounded-lg shadow-lg text-center">
+        <div className="mt-8 p-6 bg-purple-600 text-purple-100 rounded-lg shadow-lg text-center">
           <h2 className="text-2xl font-semibold">{weather.city}</h2>
           <p className="text-lg">Temperature: {weather.temperature}°F</p>
           <p className="text-lg">Description: {weather.description}</p>
@@ -57,7 +57,7 @@ const App = () => {
           <p className="text-lg">Wind Speed: {weather.windSpeed} m/s</p>
           <p className="text-lg">Pressure: {weather.pressure} mb</p>
           <img
-            className="mx-auto mt-4"
+            className="mx-auto mt-4 text-9xl"
             src={`http://openweathermap.org/img/w/${weather.icon}.png`}
             alt="weather icon"
           />

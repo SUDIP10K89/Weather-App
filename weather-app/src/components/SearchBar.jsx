@@ -18,11 +18,11 @@ const SearchBar = ({onSearch}) => {
         value={city}
         placeholder="Enter the city (Eg : Kathmandu)"
         onChange={(e) => setCity(e.target.value)}
-        className="p-2 border border-gray-300 rounded mb-4 w-64"
+        className="p-2 border bg-purple-600 border-purple-900 rounded mb-4 w-64"
       />
       <button
         onClick={handleSearch}
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+        className="bg-purple-500 text-purple-100  px-4 py-2 font-bold rounded hover:bg-blue-700"
       >
         Search
       </button>
