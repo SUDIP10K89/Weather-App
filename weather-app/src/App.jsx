@@ -8,7 +8,7 @@ const App = () => {
 
   const fetchWeather = async (city) => {
     const API_KEY = "d7d0bcb09492f1cd50087a3d3f64fd55";
-    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
     setLoading(true); // Show loading indicator
     setError(''); // Clear previous errors
 
