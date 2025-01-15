@@ -58,7 +58,7 @@ const App = () => {
           <p className="text-lg">Pressure: {weather.pressure} mb</p>
           <img
             className="mx-auto mt-4 text-9xl"
-            src={`http://openweathermap.org/img/w/${weather.icon}.png`}
+            src={`https://openweathermap.org/img/w/${weather.icon}.png`}
             alt="weather icon"
           />
         </div>
