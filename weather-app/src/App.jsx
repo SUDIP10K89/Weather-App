@@ -51,7 +51,7 @@ const App = () => {
       {weather && (
         <div className="mt-8 p-6 bg-purple-600 text-purple-100 rounded-lg shadow-lg text-center">
           <h2 className="text-2xl font-semibold">{weather.city}</h2>
-          <p className="text-lg">Temperature: {weather.temperature}°F</p>
+          <p className="text-lg">Temperature: {(weather.temperature-273).toFixed(2)}°C</p>
           <p className="text-lg">Description: {weather.description}</p>
           <p className="text-lg">Humidity: {weather.humidity}%</p>
           <p className="text-lg">Wind Speed: {weather.windSpeed} m/s</p>
